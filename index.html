@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RullkageDg.com</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #particles-js {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+
+<style>
+.popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.popup-content {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    color: #00bfff;
+}
+.popup-content h2 {
+    color: #00bfff;
+}
+.option {
+    background-color: #333;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.option:hover {
+    background-color: #444;
+}
+.close-btn {
+    background-color: #555;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <header>
+    <h1>Rull-Web</h1>
+    <nav>
+      <a href="#topup">Top Up</a>
+      <a href="#langganan">Langganan</a>
+      <a href="#nokos">nokos</a>
+      <a href="#panel">panel</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Selamat Datang di Rull-Web</h2>
+    <p>Layanan digital lengkap: Top Up, Langganan, nokos & lainnya.</p>
+  </section>
+
+  <section id="services">
+    <div class="card" id="topup">
+      <h3>Top Up Game & E‑Wallet</h3>
+      <p>Aman & Resmi</p>
+      <button onclick="showPopup('popup-topup')">Beli Sekarang</button>    
+    </div>
+    <div class="card" id="langganan">
+      <h3>Langganan Premium</h3>
+      <p>TV, Bot, Netflix, Bstation</p>
+      <button onclick="showPopup('popup-langganan')">Beli Sekarang</button>
+    </div>
+    <div class="card" id="nokos">
+      <h3>Nokos All negara</h3>
+      <p>Nomor Kosong</p>
+      <button onclick="showPopup('popup-nokos')">Beli Sekarang</button>
+    </div>
+    <div class="card" id="Panel">
+      <h3>Panel</h3>
+      <p>Panel bot WhatsApp</p>
+      <button onclick="showPopup('popup-panel')">Beli Sekarang</button>
+    </div>
+  </section>
+
+  <footer id="kontak">
+    <p>©Rull-website. All rights reserved.</p>
+    <p>Kontak: <a href="mailto:RullZys@Github.com">Zys@domain.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS('particles-js', {
+      "particles": {
+        "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#2563eb" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.3 },
+        "size": { "value": 3, "random": true },
+        "line_linked": { "enable": true, "distance": 150, "color": "#2563eb", "opacity": 0.2, "width": 1 },
+        "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "grab" },
+          "onclick": { "enable": true, "mode": "push" },
+          "resize": true
+        },
+        "modes": {
+          "grab": { "distance": 140, "line_linked": { "opacity": 1 } },
+          "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 },
+          "repulse": { "distance": 200, "duration": 0.4 },
+          "push": { "particles_nb": 4 },
+          "remove": { "particles_nb": 2 }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+
+    <div class="popup" id="popup-topup">
+      <div class="popup-content">
+        <h2>Top Up - Pilih Layanan</h2>
+<div class="option" onclick="window.open('https://wa.me/6283892730732?text=Bang%20mau%20topup%20ML','_blank')">ML</div>
+<div class="option" onclick="window.open('https://wa.me/6283892730732?text=Bang%20mau%20topup%20FF','_blank')">FF</div>
+<div class="option" onclick="window.open('https://wa.me/6283892730732?text=Bang%20mau%20topup%20PUBG','_blank')">PUBG</div>
+<div class="close-btn" onclick="hidePopup('popup-topup')">Tutup</div>
+      </div>
+    </div>
+    
+
+    <div class="popup" id="popup-langganan">
+      <div class="popup-content">
+        <h2>Langganan - Pilih Layanan</h2>
+<div class="option" onclick="window.open('https://wa.me/6283892730732?text=Bang%20mau%20langganan%20Netflix','_blank')">langganan Netflix</div>
+<div class="option" onclick="window.open('https://wa.me/6283892730732?text=Bang%20mau%20langganan%20Spotify','_blank')">langganan Spotify</div>
+<div class="option" onclick="window.open('https://wa.me/6283892730732?text=Bang%20mau%20langganan%20YouTube%20Premium','_blank')">langganan YouTube Premium</div>
+<div class="option" onclick="window.open('https://wa.me/6283892730732?text=Bang%20mau%20langganan%20Telegram','_blank')">langganan Bstation</div>
+<div class="close-btn" onclick="hidePopup('popup-langganan')">Tutup</div>
+      </div>
+    </div>
+    
+
+    <div class="popup" id="popup-nokos">
+      <div class="popup-content">
+        <h2>Nokos - Pilih Negara</h2>
+        <div class="option" onclick="window.open('https://wa.me/6283892730732?text=Bang%20mau%20Nokos%20Indonesia','_blank')">Nokos Indonesia</div>
+<div class="option" onclick="window.open('https://wa.me/6283892730732?text=Bang%20mau%20Nokos%20USA','_blank')">Nokos USA</div>
+<div class="option" onclick="window.open('https://wa.me/6283892730732?text=Bang%20mau%20Nokos%20Afrika','_blank')">Nokos South Afrika</div>
+<div class="option" onclick="window.open('https://wa.me/6283892730732?text=Bang%20mau%20Nokos%20philipina','_blank')">Nokos Philipina</div>
+<div class="option" onclick="window.open('https://wa.me/6283892730732?text=Bang%20mau%20Nokos%20Malaysia','_blank')">Nokos Malaysia</div>
+        <div class="close-btn" onclick="hidePopup('popup-nokos')">Tutup</div>
+      </div>
+    </div>
+    
+
+    <div class="popup" id="popup-panel">
+  <div class="popup-content">
+    <h2>Panel - Pilih Tipe</h2>
+    <div class="option" onclick="window.open('https://wa.me/6283892730732?text=Bang%20Beli%20Panel%20WA','_blank')">Panel WA</div>
+    <div class="option" onclick="window.open('https://wa.me/6283892730732?text=Bang%20beli%20Panel%20Telegram','_blank')">Panel Telegram</div>
+    <div class="option" onclick="window.open('https://wa.me/6283892730732?text=Panel%20Bot','_blank')">Panel Bot</div>
+    <div class="option" onclick="window.open('https://wa.me/6283892730732?text=Bang%20beli%20Panel%20Reseller','_blank')">Panel Reseller</div>
+    <div class="option" onclick="window.open('https://wa.me/6283892730732?text=Bang%20beli%20Panel%20API','_blank')">Panel API</div>
+    <div class="close-btn" onclick="hidePopup('popup-panel')">Tutup</div>
+  </div>
+</div>
+    </div>
+    
+
+<script>
+  function showPopup(id) {
+    document.getElementById(id).style.display = 'flex';
+  }
+  function hidePopup(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+</script>
+
+
+<div style="position: fixed; bottom: 20px; width: 100%; text-align: center; z-index: 999;">
+  <button onclick="openPaymentPopup()" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">
+    Payment di sini
+  </button>
+</div>
+
+<div id="paymentPopup" style="display: none; position: fixed; top: 0; left: 0;
+width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); text-align: center; padding-top: 100px; z-index: 1000;">
+  <div style="background: white; display: inline-block; padding: 20px; border-radius: 10px; width: 300px;">
+    <h3>Pilih Metode Pembayaran</h3>
+    <button onclick="showQR('dana')">Dana</button>
+    <button onclick="showQR('gopay')">Gopay</button>
+    <button onclick="showQR('qris')">QRIS</button>
+    <div id="qrContainer" style="margin-top: 20px;"></div>
+    <br>
+    <button onclick="closePaymentPopup()" style="margin-top: 10px;">Tutup</button>
+  </div>
+</div>
+
+<script>
+function openPaymentPopup() {
+  document.getElementById("paymentPopup").style.display = "block";
+}
+
+function closePaymentPopup() {
+  document.getElementById("paymentPopup").style.display = "none";
+  document.getElementById("qrContainer").innerHTML = "";
+}
+
+function showQR(method) {
+  let nomor = "0838-9273-0732";
+  if (method === 'qris') {
+    document.getElementById("qrContainer").innerHTML =
+      '<img src="https://raw.githubusercontent.com/media-clouds/upload/id/6283892730732/mc1o0c3r.jpg" alt="QRIS" style="width:200px;">';
+  } else {
+    navigator.clipboard.writeText(nomor).then(() => {
+      document.getElementById("qrContainer").innerHTML =
+        `Nomor ${method.charAt(0).toUpperCase() + method.slice(1)}: ${nomor}<br><small style="color:green;">Nomor telah disalin ke clipboard</small>`;
+    }).catch(err => {
+      document.getElementById("qrContainer").innerHTML =
+        `Nomor ${method.charAt(0).toUpperCase() + method.slice(1)}: ${nomor}<br><small style="color:red;">Gagal menyalin nomor</small>`;
+    });
+  }
+}
+</script>
+
+</body>
+</html>
